@@ -1,0 +1,6 @@
+name: HeroMarket
+version: 1.0
+main: com.mcheroth.heromarket.HeroMarket
+author: tauhoo
+commands: 
+    heromarket:
