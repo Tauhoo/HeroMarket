@@ -31,7 +31,7 @@ public class HeroMarket extends JavaPlugin{
 			Player player = null;
 			if( args.length == 2 && args[0].equals("open")){
 				player = Bukkit.getPlayer(args[1]);
-				
+				player.openInventory(tool.BuyGUI(1));
 				return true;
 			}
 			if( args.length == 2 && args[0].equals("sell")){
@@ -44,10 +44,6 @@ public class HeroMarket extends JavaPlugin{
 				sender.sendMessage(ChatColor.GREEN+"Config was reloaded.");
 				return true;
 			}
-			sender.sendMessage(ChatColor.GREEN+"/heromoster setWorld");
-			sender.sendMessage(ChatColor.GRAY+"Used for reload config.");
-			sender.sendMessage(ChatColor.GREEN+"/heromoster update");
-			sender.sendMessage(ChatColor.GRAY+"Used for register world to set drop item.");
 		}
 		return false;
 	}	
